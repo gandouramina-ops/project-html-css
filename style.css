@@ -37,81 +37,184 @@ body {
   text-decoration: underline;
 }
 
-.banner{
-    background: linear-gradient(55deg, #180A2F,#8bc5f6);
-    color: white;
-    padding: 4rem 2rem;
-    text-align: center;
-
+.banner {
+  background: linear-gradient(55deg, #180a2f, #8bc5f6);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
 }
-.banner h2{
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.btn-banner{
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.7rem 1.5rem;
-    background: white;
-    color: #6a0dad;
-    font-weight: bold;
-    border-radius: 5px;
-    text-decoration: none;
-}
-.btn-banner:hover{
-    background: #8bc5f6;
-
-}
-main{
-    flex: 1;
-    padding: 2rem;
+.banner h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-section{
-    margin-bottom: 3rem;
+.btn-banner {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background: white;
+  color: #6a0dad;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.btn-banner:hover {
+  background: #8bc5f6;
+}
+main {
+  flex: 1;
+  padding: 2rem;
+}
 
+section {
+  margin-bottom: 3rem;
 }
-section h2{
-    margin-bottom: 1rem;
-    color: #6a0dad;
+section h2 {
+  margin-bottom: 1rem;
+  color: #6a0dad;
 }
-.about-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin: auto;
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: auto;
 }
-.about-text{
-    flex:1;
-    display: flex;
+.about-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-text strong {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  max-width: 600px;
+}
+img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 10px;
+}
+.card-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 250px;
+}
+.values-grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.values-item {
+  background: #e1d3eb;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 240px;
+}
+.values-item h4 {
+  margin-bottom: 1rem;
+  color: #6a0dad;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.contact-form label {
+  margin-top: 1rem;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 0.7rem;
+  margin-top: 0.3rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+.contact-form .radio-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.contact-form input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+.contact-form .checkbox input {
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  background: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-form button {
+  background: #2e0255;
+  color: white;
+}
+.contact-form button:hover {
+  background: #2e0255;
+}
+
+footer {
+  background: #6a0dad;
+  color: white;
+  text-align: center;
+  padding: item;
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .navbar {
     flex-direction: column;
-    justify-content: center;
-}
-.about-text strong{
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    max-width: 600px;
+    align-items: flex-start;
+  }
+  .navbar ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 1rem;
+  }
+  .banner {
+    padding: 2rem 1rem;
+  }
+  .banner h2 {
+    font-size: 2rem;
+  }
+  .btn-banner {
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+  }
+  .about .about-content {
+    flex-direction: column;
+  }
+  .about-content, img {
+    flex: 1 1 100%;
+  }
+  .card-container {
+    flex-direction: column;
+  }
+  .card{
+    min-width: auto;
 
-}
-img{
-    max-width: 500px;
-    width: 100%;
-    border-radius: 10px;
-}
-.card-container{
-    display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-
-}
-.card{
-    background: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    flex: 1;
-    min-width: 250px;
+  }
+  main{
+    padding: 1rem;
+  }
+  section{
+    margin-bottom: 2rem;
+  }
+  
 }
